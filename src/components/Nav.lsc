@@ -4,41 +4,33 @@ import {
   Navbar
   Nav
   NavItem
-  Dropdown
+  UncontrolledDropdown
   DropdownMenu
   DropdownItem
   DropdownToggle
 } from 'reactstrap'
 
-export default class extends Component:
-  state = {}
-  toggle() =>
-    this.setState(state => ({ dropdownOpen: !state.dropdownOpen }))
-  render() ->
-    { dropdownOpen } = this.state
-    { current, menus } = this.props
+export default ({ current, menus, onAdd, onDelete }) ->
     <Navbar color="light" light expand="md">
-      <Dropdown isOpen={dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle nav caret>
+      <UncontrolledDropdown>
+        <DropdownToggle nav caret className="navbar-brand">
           {current}
         </DropdownToggle>
         <DropdownMenu>
           {menus~omit(current)~Object.keys()~map(id ->
-            <Link to={`/${id}`}>
-              <DropdownItem key={id}>
-                <i className="feather icon-calendar"> </i>
-                {id}
-              </DropdownItem>
+            <Link key={id} to={`/${id}`} className="nounderline dropdown-item">
+              <i className="feather icon-calendar"> </i>
+              {id}
             </Link>
           )}
-          <DropdownItem>
+          <DropdownItem onClick={onAdd} className="cursor-pointer">
             <i className="feather icon-plus"> </i>
             create new menu
           </DropdownItem>
         </DropdownMenu>
-      </Dropdown>
+      </UncontrolledDropdown>
       <Nav className="ml-auto mr-3" navbar>
-        <NavItem>
+        <NavItem onClick={-> onDelete(current)}>
           <i className="feather icon-trash-2 delete"/>
         </NavItem>
       </Nav>
