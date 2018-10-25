@@ -48,6 +48,18 @@ export default Day({
                 {item.nutrition.kcal}kcal
               </Badge>
             </div>
+            <div>
+              {if item.additives.length:
+                <Badge className="font-weight-normal mr-1" color="primary" pill>
+                  additives
+                </Badge>
+              }
+              {if item.allergens.length:
+                <Badge className="font-weight-normal" color="danger" pill>
+                  allergens
+                </Badge>
+              }
+            </div>
           </ListGroupItem>
         )}
       </ListGroup>
