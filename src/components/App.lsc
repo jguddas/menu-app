@@ -6,6 +6,7 @@ import Week from './Week'
 import ErrorPage from './ErrorPage'
 import AddMenu from './AddMenu'
 import DeleteMenu from './DeleteMenu'
+import AddItem from './AddItem'
 
 emptyMenu = [
   { title: 'Monday', items: [] }
@@ -45,10 +46,29 @@ export default class App extends Component:
     [_id] = Object.keys(menus)
     if _id: history.push(`/${_id}`)
 
-  toggle() => this.setState({ add: false, delete: undefined })
+  onAddItem(id, idx) => this.setState({ addItem: { id, idx } })
+
+  onAddItemConfirm(id, idx, item) =>
+    this.setState(state =>
+      menus = state.menus~cloneDeep()
+      menus[id][idx].items.push(item)
+      { menus, addItem: false }
+    )
+
+  toggle() =>
+    this.setState({
+      add: false
+      delete: undefined
+      addItem: false
+    })
 
   render() ->
-    { menus, add, delete: _delete } = this.state
+    {
+      menus
+      add
+      delete: _delete
+      addItem
+    } = this.state
     <div>
       <Router history={history}>
         <div>
@@ -62,6 +82,14 @@ export default class App extends Component:
             id={_delete}
             toggle={this.toggle}
             onConfirm={=> this.onDeleteConfirm(_delete)}
+          />
+          <AddItem
+            isOpen={addItem}
+            toggle={this.toggle}
+            onConfirm={item =>
+              console.log(item)
+              this.onAddItemConfirm(addItem.id, addItem.idx, item)
+            }
           />
           <Route
             path="/:id"
@@ -79,7 +107,7 @@ export default class App extends Component:
                   if !menus[id]:
                     <ErrorPage msg="menu could not be found" />
                   else:
-                    <Week menu={menus[id]} />
+                    <Week menu={menus[id]} id={id} onAdd={this.onAddItem}/>
                 }
               </Fragment>
             }

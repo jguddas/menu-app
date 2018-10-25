@@ -13,6 +13,7 @@ export default Day({
   items
   current
   className = ''
+  onAdd
   ...props
 }) ->
   <Card
@@ -24,7 +25,10 @@ export default Day({
   >
     <CardHeader>
       {title}
-      <i className="feather icon-plus float-right mt-1 add" />
+      <i
+        className="feather icon-plus float-right mt-1 add"
+        onClick={onAdd}
+      />
     </CardHeader>
     <CardBody>
       <ListGroup>

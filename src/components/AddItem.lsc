@@ -1,0 +1,51 @@
+import React from 'react'
+import {
+  Modal
+  ModalHeader
+  ModalBody
+  ModalFooter
+  Button
+  Form
+  FormGroup
+  Input
+  Label
+  Row
+  Col
+} from 'reactstrap'
+import articles from '../data/articles.json'
+
+export default AddMenu({ toggle, onConfirm, ...props }) ->
+  <Modal {...props} toggle={toggle}>
+    <ModalHeader toggle={toggle}>Add Menu entry</ModalHeader>
+      <Form
+        onSubmit={e ->
+          e.preventDefault()
+          amount = (e.target.elements[1].value || '100').replace(/g$/, '')
+          name = e.target.elements[0].value
+          if !(/\D/).test(amount):
+            onConfirm({ amount, ...articles.find(val -> val.name == name) })
+        }
+      >
+        <ModalBody>
+          <Row form>
+            <Col md={10}>
+              <FormGroup inline className="mb-0">
+                <Label>Article</Label>
+                <select className="form-control">
+                  {articles~map(article -> <option>{article.name}</option>)}
+                </select>
+              </FormGroup>
+            </Col>
+            <Col md={2}>
+              <FormGroup inline className="mb-0">
+                <Label>Amount</Label>
+                <Input placeholder="100g" />
+              </FormGroup>
+            </Col>
+          </Row>
+        </ModalBody>
+        <ModalFooter>
+          <Button color="primary">Confirm</Button>
+        </ModalFooter>
+      </Form>
+  </Modal>
