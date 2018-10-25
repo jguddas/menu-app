@@ -83,7 +83,8 @@ export default class App extends Component:
   onDeleteItem(id, idx, i) =>
     this.setState(state =>
       menus = state.menus~cloneDeep()
-      menus[id][idx].items = menus[id][idx].items~omit(i)
+      menus[id][idx].items = menus[id][idx].items
+        .filter((item, _idx) -> _idx != i)
       { menus, editItem: false }
     )
 
