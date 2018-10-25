@@ -1,7 +1,17 @@
 import React from 'react'
 import Nav from './Nav'
+import Week from './Week'
+
+exampleMenu = [
+  { title: 'Monday', items: [{ name: 'one' }, { name: 'two', id: 5 }], current: 5 }
+  { title: 'Tuesday', items: [] }
+  { title: 'Wednesday', items: [] }
+  { title: 'Thursday', items: [] }
+  { title: 'Friday', items: [] }
+]
 
 export default App() ->
   <div>
     <Nav/>
+    <Week menu={exampleMenu}/>
   </div>
