@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "mit Farbstoff"
+  },
+  {
+    "id": 2,
+    "name": "konserviert"
+  },
+  {
+    "id": 3,
+    "name": "mit Antioxidationsmittel"
+  },
+  {
+    "id": 4,
+    "name": "mit Geschmacksverstärker"
+  },
+  {
+    "id": 5,
+    "name": "geschwefelt"
+  },
+  {
+    "id": 6,
+    "name": "geschwärzt"
+  },
+  {
+    "id": 7,
+    "name": "gewachst"
+  },
+  {
+    "id": 8,
+    "name": "mit Phosphat"
+  },
+  {
+    "id": 9,
+    "name": "mit Süßungsmittel"
+  },
+  {
+    "id": 10,
+    "name": "mit einer Zuckerart und Süßungsmittel"
+  },
+  {
+    "id": 11,
+    "name": "enthält eine Phenylalaninquelle"
+  },
+  {
+    "id": 12,
+    "name": "chininhaltig"
+  },
+  {
+    "id": 13,
+    "name": "koffeinhaltig"
+  },
+  {
+    "id": 14,
+    "name": "mit Milcheiweiß"
+  },
+  {
+    "id": 15,
+    "name": "mit Taurin"
+  }
+]

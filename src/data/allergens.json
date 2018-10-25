@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Eier"
+  },
+  {
+    "id": 2,
+    "name": "Krebstiere"
+  },
+  {
+    "id": 3,
+    "name": "Erdnüsse"
+  },
+  {
+    "id": 4,
+    "name": "Fisch"
+  },
+  {
+    "id": 5,
+    "name": "Milch und Laktose"
+  },
+  {
+    "id": 6,
+    "name": "Soja"
+  },
+  {
+    "id": 7,
+    "name": "Sellerie"
+  },
+  {
+    "id": 8,
+    "name": "Senf"
+  },
+  {
+    "id": 9,
+    "name": "Sesamsamen"
+  },
+  {
+    "id": 10,
+    "name": "Schwefeldioxide und Sulfite"
+  },
+  {
+    "id": 11,
+    "name": "Lupine"
+  },
+  {
+    "id": 12,
+    "name": "Weichtiere"
+  },
+  {
+    "id": 13,
+    "name": "Glutenhaltige Getreide"
+  },
+  {
+    "id": 14,
+    "name": "Schalenfrüchte"
+  }
+]

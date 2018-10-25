@@ -1,0 +1,1616 @@
+[
+  {
+    "id": 1,
+    "name": "Frische fettarme Milch",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 47,
+      "fat": 1.5,
+      "saturatedFattyAcids": 1,
+      "carbohydrates": 4.9,
+      "sugars": 4.9,
+      "protein": 3.5,
+      "salt": 0.13
+    }
+  },
+  {
+    "id": 2,
+    "name": "Sammy's Super Sandwich Vollkorn",
+    "allergens": [
+      {
+        "id": 9,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 248,
+      "fat": 4,
+      "saturatedFattyAcids": 0.5,
+      "carbohydrates": 41,
+      "sugars": 5,
+      "protein": 9,
+      "salt": 1.2
+    }
+  },
+  {
+    "id": 3,
+    "name": "Nutella",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 6,
+        "value": "yes"
+      },
+      {
+        "id": 14,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 539,
+      "fat": 30.9,
+      "saturatedFattyAcids": 10.6,
+      "carbohydrates": 57.5,
+      "sugars": 56.3,
+      "protein": 6.3,
+      "salt": 0.107
+    }
+  },
+  {
+    "id": 4,
+    "name": "Leibniz Butterkeks",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "yes"
+      },
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 8, 14 ],
+    "nutrition": {
+      "kcal": 435,
+      "fat": 12,
+      "saturatedFattyAcids": 7.8,
+      "carbohydrates": 72,
+      "sugars": 21,
+      "protein": 8.4,
+      "salt": 1.53
+    }
+  },
+  {
+    "id": 5,
+    "name": "Gewürz-Spekulatius",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "traces"
+      },
+      {
+        "id": 5,
+        "value": "traces"
+      },
+      {
+        "id": 6,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      },
+      {
+        "id": 14,
+        "value": "traces"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 470,
+      "fat": 18,
+      "saturatedFattyAcids": 9,
+      "carbohydrates": 70,
+      "sugars": 29,
+      "protein": 5.9,
+      "salt": 1.2
+    }
+  },
+  {
+    "id": 6,
+    "name": "Almdudler",
+    "allergens": [],
+    "additives": [ 1 ],
+    "nutrition": {
+      "kcal": 33,
+      "fat": 0,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 7.9,
+      "sugars": 7.9,
+      "protein": 0,
+      "salt": 0
+    }
+  },
+  {
+    "id": 7,
+    "name": "Red Bull",
+    "allergens": [],
+    "additives": [ 1, 13, 15 ],
+    "nutrition": {
+      "kcal": 45,
+      "fat": 0,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 11,
+      "sugars": 11,
+      "protein": 0,
+      "salt": 0.1
+    }
+  },
+  {
+    "id": 8,
+    "name": "Appel Heringfilets in Tomaten-Creme",
+    "allergens": [
+      {
+        "id": 4,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 203,
+      "fat": 14.5,
+      "saturatedFattyAcids": 2.3,
+      "carbohydrates": 5.5,
+      "sugars": 4.5,
+      "protein": 11.6,
+      "salt": 0.78
+    }
+  },
+  {
+    "id": 9,
+    "name": "Appel Heringfilets in Eier-Senf-Creme",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "yes"
+      },
+      {
+        "id": 8,
+        "value": "yes"
+      },
+      {
+        "id": 8,
+        "value": "yes"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 206,
+      "fat": 15.4,
+      "saturatedFattyAcids": 2.4,
+      "carbohydrates": 3,
+      "sugars": 1.8,
+      "protein": 13.1,
+      "salt": 1.2
+    }
+  },
+  {
+    "id": 10,
+    "name": "DER GROSSE BAUER Schoko Müsli",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 115,
+      "fat": 4.1,
+      "saturatedFattyAcids": 2.8,
+      "carbohydrates": 15.4,
+      "sugars": 14.7,
+      "protein": 3.5,
+      "salt": 0.08
+    }
+  },
+  {
+    "id": 11,
+    "name": "Rügenwalder Mühle Bio Schinken Spicker Mortadella",
+    "allergens": [],
+    "additives": [ 2, 3 ],
+    "nutrition": {
+      "kcal": 250,
+      "fat": 22,
+      "saturatedFattyAcids": 8.5,
+      "carbohydrates": 1,
+      "sugars": 1,
+      "protein": 12,
+      "salt": 2.4
+    }
+  },
+  {
+    "id": 12,
+    "name": "Rügenwalder Mühle Bio Schinken Spicker Bärlauch-Lyoner",
+    "allergens": [],
+    "additives": [ 2, 3 ],
+    "nutrition": {
+      "kcal": 241,
+      "fat": 21,
+      "saturatedFattyAcids": 8.1,
+      "carbohydrates": 1,
+      "sugars": 1,
+      "protein": 12,
+      "salt": 2.6
+    }
+  },
+  {
+    "id": 13,
+    "name": "Bonne Maman Erdbeer-Walderdbeer-Konfitüre",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 241,
+      "fat": 0.1,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 59,
+      "sugars": 59,
+      "protein": 0.4,
+      "salt": 0
+    }
+  },
+  {
+    "id": 14,
+    "name": "Bonne Maman Caramel",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 307,
+      "fat": 3.7,
+      "saturatedFattyAcids": 2.3,
+      "carbohydrates": 65,
+      "sugars": 52,
+      "protein": 3.4,
+      "salt": 0.65
+    }
+  },
+  {
+    "id": 15,
+    "name": "Ovomaltine Crunchy Cream",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      },
+      {
+        "id": 14,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 3, 8 ],
+    "nutrition": {
+      "kcal": 545,
+      "fat": 32,
+      "saturatedFattyAcids": 7.1,
+      "carbohydrates": 59.5,
+      "sugars": 54.5,
+      "protein": 3.8,
+      "salt": 0.25
+    }
+  },
+  {
+    "id": 16,
+    "name": "Ovomaltine Pulver",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 8 ],
+    "nutrition": {
+      "kcal": 376,
+      "fat": 2,
+      "saturatedFattyAcids": 1,
+      "carbohydrates": 78,
+      "sugars": 51.1,
+      "protein": 9.4,
+      "salt": 0.5
+    }
+  },
+  {
+    "id": 17,
+    "name": "Alnatura Dinkel Grünkern Brot",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "traces"
+      },
+      {
+        "id": 6,
+        "value": "traces"
+      },
+      {
+        "id": 9,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 193,
+      "fat": 1.4,
+      "saturatedFattyAcids": 0.2,
+      "carbohydrates": 34.9,
+      "sugars": 3,
+      "protein": 5.4,
+      "salt": 1.3
+    }
+  },
+  {
+    "id": 18,
+    "name": "Alnatura Toastbrötchen",
+    "allergens": [
+      {
+        "id": 6,
+        "value": "traces"
+      },
+      {
+        "id": 9,
+        "value": "traces"
+      },
+      {
+        "id": 11,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 260,
+      "fat": 2.7,
+      "saturatedFattyAcids": 0.3,
+      "carbohydrates": 46,
+      "sugars": 3.2,
+      "protein": 7.3,
+      "salt": 1.4
+    }
+  },
+  {
+    "id": 19,
+    "name": "Dr. Oetker Vitalis Knuspermüsli Nuss-Nougat",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 6,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      },
+      {
+        "id": 14,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 467,
+      "fat": 19,
+      "saturatedFattyAcids": 3.6,
+      "carbohydrates": 62,
+      "sugars": 25,
+      "protein": 9.1,
+      "salt": 0.25
+    }
+  },
+  {
+    "id": 20,
+    "name": "Dr. Oetker Vitalis Weniger süß Knusper Schoko",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 6,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      },
+      {
+        "id": 14,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 435,
+      "fat": 15,
+      "saturatedFattyAcids": 2.7,
+      "carbohydrates": 57,
+      "sugars": 14,
+      "protein": 12,
+      "salt": 0.74
+    }
+  },
+  {
+    "id": 21,
+    "name": "Granini Trinkgenuss Orange",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 43,
+      "fat": 0.5,
+      "saturatedFattyAcids": 0.1,
+      "carbohydrates": 8.8,
+      "sugars": 8.8,
+      "protein": 1,
+      "salt": 0.003
+    }
+  },
+  {
+    "id": 22,
+    "name": "Granini Trinkgenuss Pink Grapefruit",
+    "allergens": [],
+    "additives": [ 10 ],
+    "nutrition": {
+      "kcal": 41,
+      "fat": 0.5,
+      "saturatedFattyAcids": 0.1,
+      "carbohydrates": 9.1,
+      "sugars": 9.1,
+      "protein": 1,
+      "salt": 0.003
+    }
+  },
+  {
+    "id": 23,
+    "name": "LÄTTA Original",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 1, 2 ],
+    "nutrition": {
+      "kcal": 338,
+      "fat": 37,
+      "saturatedFattyAcids": 13,
+      "carbohydrates": 1.9,
+      "sugars": 0.5,
+      "protein": 0.5,
+      "salt": 0.53
+    }
+  },
+  {
+    "id": 24,
+    "name": "LÄTTA Joghurt",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 1, 2 ],
+    "nutrition": {
+      "kcal": 339,
+      "fat": 37,
+      "saturatedFattyAcids": 13,
+      "carbohydrates": 2.3,
+      "sugars": 0.7,
+      "protein": 0.5,
+      "salt": 0.25
+    }
+  },
+  {
+    "id": 25,
+    "name": "LÄTTA Extra Fit",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 1, 2 ],
+    "nutrition": {
+      "kcal": 265,
+      "fat": 28,
+      "saturatedFattyAcids": 5.6,
+      "carbohydrates": 3.2,
+      "sugars": 0.5,
+      "protein": 1.1,
+      "salt": 0.8
+    }
+  },
+  {
+    "id": 26,
+    "name": "Leerdammer® Original",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 352,
+      "fat": 27.5,
+      "saturatedFattyAcids": 18.5,
+      "carbohydrates": 0.1,
+      "sugars": 0.1,
+      "protein": 26,
+      "salt": 1.5
+    }
+  },
+  {
+    "id": 27,
+    "name": "Leerdammer® Léger",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 262,
+      "fat": 16,
+      "saturatedFattyAcids": 10.5,
+      "carbohydrates": 0.1,
+      "sugars": 0.1,
+      "protein": 29.5,
+      "salt": 1.5
+    }
+  },
+  {
+    "id": 28,
+    "name": "Frische Vollmilch",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 64,
+      "fat": 3.5,
+      "saturatedFattyAcids": 2.4,
+      "carbohydrates": 4.8,
+      "sugars": 4.8,
+      "protein": 3.4,
+      "salt": 0.13
+    }
+  },
+  {
+    "id": 29,
+    "name": "Stilles Mineralwasser",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 0,
+      "fat": 0,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 0,
+      "sugars": 0,
+      "protein": 0,
+      "salt": 0
+    }
+  },
+  {
+    "id": 30,
+    "name": "Tafelsalz feinkörnig",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 0,
+      "fat": 0,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 0,
+      "sugars": 0,
+      "protein": 0,
+      "salt": 100
+    }
+  },
+  {
+    "id": 31,
+    "name": "Feiner Zucker",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 400,
+      "fat": 0,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 100,
+      "sugars": 100,
+      "protein": 0,
+      "salt": 0
+    }
+  },
+  {
+    "id": 32,
+    "name": "Dill",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 257,
+      "fat": 3.8,
+      "saturatedFattyAcids": 0.7,
+      "carbohydrates": 36,
+      "sugars": 0,
+      "protein": 17,
+      "salt": 0.3
+    }
+  },
+  {
+    "id": 33,
+    "name": "Knorr Gemüse Bouillon",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "traces"
+      },
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 7,
+        "value": "yes"
+      },
+      {
+        "id": 8,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "traces"
+      }
+    ],
+    "additives": [ 4 ],
+    "nutrition": {
+      "kcal": 275,
+      "fat": 11,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 33,
+      "sugars": 27.5,
+      "protein": 16.5,
+      "salt": 71.5
+    }
+  },
+  {
+    "id": 34,
+    "name": "Knorr Jäger Soße",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "traces"
+      },
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 7,
+        "value": "traces"
+      },
+      {
+        "id": 8,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 1, 3, 4 ],
+    "nutrition": {
+      "kcal": 402,
+      "fat": 19.6,
+      "saturatedFattyAcids": 12,
+      "carbohydrates": 48.9,
+      "sugars": 6.5,
+      "protein": 9.8,
+      "salt": 10.65
+    }
+  },
+  {
+    "id": 35,
+    "name": "reis-fit Spitzen-Langkorn",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 351,
+      "fat": 1,
+      "saturatedFattyAcids": 0.2,
+      "carbohydrates": 78,
+      "sugars": 0.2,
+      "protein": 7,
+      "salt": 0.025
+    }
+  },
+  {
+    "id": 36,
+    "name": "Mazola 100 % reines Keimöl",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 828,
+      "fat": 92,
+      "saturatedFattyAcids": 13,
+      "carbohydrates": 0,
+      "sugars": 0,
+      "protein": 0,
+      "salt": 0
+    }
+  },
+  {
+    "id": 37,
+    "name": "Barilla Maccheroni",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 359,
+      "fat": 2,
+      "saturatedFattyAcids": 0.5,
+      "carbohydrates": 71.2,
+      "sugars": 3.5,
+      "protein": 12.5,
+      "salt": 0.013
+    }
+  },
+  {
+    "id": 38,
+    "name": "Barilla Penne Rigate",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "traces"
+      },
+      {
+        "id": 6,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 359,
+      "fat": 2,
+      "saturatedFattyAcids": 0.5,
+      "carbohydrates": 71.2,
+      "sugars": 3.5,
+      "protein": 12.5,
+      "salt": 0.013
+    }
+  },
+  {
+    "id": 39,
+    "name": "Kühne Original Rotkohl",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 50,
+      "fat": 0.1,
+      "saturatedFattyAcids": 0.1,
+      "carbohydrates": 9.4,
+      "sugars": 7.7,
+      "protein": 1.3,
+      "salt": 1.3
+    }
+  },
+  {
+    "id": 40,
+    "name": "Edeka Supersweet Mais",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 69,
+      "fat": 1.2,
+      "saturatedFattyAcids": 0.3,
+      "carbohydrates": 10.5,
+      "sugars": 7,
+      "protein": 2.5,
+      "salt": 0.5
+    }
+  },
+  {
+    "id": 41,
+    "name": "Edeka Mexikanische Gemüsemischung",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 77,
+      "fat": 1.6,
+      "saturatedFattyAcids": 0.3,
+      "carbohydrates": 9.4,
+      "sugars": 3,
+      "protein": 3.8,
+      "salt": 0.35
+    }
+  },
+  {
+    "id": 42,
+    "name": "Alnatura Hühnerbrühe",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "traces"
+      },
+      {
+        "id": 5,
+        "value": "traces"
+      },
+      {
+        "id": 6,
+        "value": "traces"
+      },
+      {
+        "id": 7,
+        "value": "yes"
+      },
+      {
+        "id": 8,
+        "value": "traces"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 273,
+      "fat": 13.6,
+      "saturatedFattyAcids": 4.5,
+      "carbohydrates": 31.8,
+      "sugars": 9.1,
+      "protein": 9.1,
+      "salt": 40.91
+    }
+  },
+  {
+    "id": 43,
+    "name": "Haltbarer Schmand",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 244,
+      "fat": 24,
+      "saturatedFattyAcids": 16,
+      "carbohydrates": 3.4,
+      "sugars": 3.4,
+      "protein": 2.9,
+      "salt": 0.1
+    }
+  },
+  {
+    "id": 44,
+    "name": "Gutshof-Ei – Die Besten",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 137,
+      "fat": 9.3,
+      "saturatedFattyAcids": 2.7,
+      "carbohydrates": 1.53,
+      "sugars": 1.5,
+      "protein": 11.85,
+      "salt": 0.3
+    }
+  },
+  {
+    "id": 45,
+    "name": "Gurken frisch",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 12,
+      "fat": 0.2,
+      "saturatedFattyAcids": 0.1,
+      "carbohydrates": 2,
+      "sugars": 1.8,
+      "protein": 1,
+      "salt": 0
+    }
+  },
+  {
+    "id": 46,
+    "name": "Joghurt natur 1,5 %",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 14 ],
+    "nutrition": {
+      "kcal": 52,
+      "fat": 1.5,
+      "saturatedFattyAcids": 1,
+      "carbohydrates": 5.3,
+      "sugars": 5.3,
+      "protein": 4.1,
+      "salt": 0.1
+    }
+  },
+  {
+    "id": 47,
+    "name": "Lauchzwiebeln",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 26,
+      "fat": 0.3,
+      "saturatedFattyAcids": 0.05,
+      "carbohydrates": 3.2,
+      "sugars": 0,
+      "protein": 2.24,
+      "salt": 0
+    }
+  },
+  {
+    "id": 48,
+    "name": "Olivenöl",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 900,
+      "fat": 99.6,
+      "saturatedFattyAcids": 16.66,
+      "carbohydrates": 0.2,
+      "sugars": 0,
+      "protein": 0,
+      "salt": 0
+    }
+  },
+  {
+    "id": 49,
+    "name": "Pfeffer",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 285,
+      "fat": 3.3,
+      "saturatedFattyAcids": 0.8,
+      "carbohydrates": 52,
+      "sugars": 49.4,
+      "protein": 10.9,
+      "salt": 0.9
+    }
+  },
+  {
+    "id": 50,
+    "name": "Zitronen",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 29,
+      "fat": 0.3,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 9,
+      "sugars": 2.5,
+      "protein": 1.1,
+      "salt": 0
+    }
+  },
+  {
+    "id": 51,
+    "name": "Ammerland Sahne",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 14 ],
+    "nutrition": {
+      "kcal": 117,
+      "fat": 10,
+      "saturatedFattyAcids": 3,
+      "carbohydrates": 4,
+      "sugars": 0,
+      "protein": 3.1,
+      "salt": 0.1
+    }
+  },
+  {
+    "id": 52,
+    "name": "Sahne Weihenstephan 30 %",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 14 ],
+    "nutrition": {
+      "kcal": 293,
+      "fat": 30,
+      "saturatedFattyAcids": 19.5,
+      "carbohydrates": 3.2,
+      "sugars": 3.2,
+      "protein": 2.5,
+      "salt": 0.08
+    }
+  },
+  {
+    "id": 53,
+    "name": "enerBiO Zitronensaft",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 29,
+      "fat": 0.1,
+      "saturatedFattyAcids": 0.1,
+      "carbohydrates": 1.7,
+      "sugars": 1.7,
+      "protein": 0.4,
+      "salt": 0
+    }
+  },
+  {
+    "id": 54,
+    "name": "Delikatess Mayonnaise",
+    "allergens": [
+      {
+        "id": 1,
+        "value": "yes"
+      },
+      {
+        "id": 8,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 3 ],
+    "nutrition": {
+      "kcal": 710,
+      "fat": 77.2,
+      "saturatedFattyAcids": 6,
+      "carbohydrates": 2.6,
+      "sugars": 2.6,
+      "protein": 0.9,
+      "salt": 0.88
+    }
+  },
+  {
+    "id": 55,
+    "name": "Hela Tomaten Gewürz Ketchup",
+    "allergens": [],
+    "additives": [ 4 ],
+    "nutrition": {
+      "kcal": 126,
+      "fat": 0.1,
+      "saturatedFattyAcids": 0.1,
+      "carbohydrates": 29.3,
+      "sugars": 26.1,
+      "protein": 0.9,
+      "salt": 2.2
+    }
+  },
+  {
+    "id": 56,
+    "name": "ja! Chester",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 1, 8 ],
+    "nutrition": {
+      "kcal": 278,
+      "fat": 22,
+      "saturatedFattyAcids": 15,
+      "carbohydrates": 5.4,
+      "sugars": 5.4,
+      "protein": 14.6,
+      "salt": 3.6
+    }
+  },
+  {
+    "id": 57,
+    "name": "Kartoffeln roh",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 77,
+      "fat": 0.3,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 16,
+      "sugars": 2.1,
+      "protein": 1.7,
+      "salt": 0
+    }
+  },
+  {
+    "id": 58,
+    "name": "McCain Steakhouse Frites",
+    "allergens": [
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 1 ],
+    "nutrition": {
+      "kcal": 162,
+      "fat": 5.5,
+      "saturatedFattyAcids": 0.6,
+      "carbohydrates": 24,
+      "sugars": 0.5,
+      "protein": 3,
+      "salt": 0.4
+    }
+  },
+  {
+    "id": 59,
+    "name": "McCain Kroketten",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "traces"
+      },
+      {
+        "id": 13,
+        "value": "traces"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 181,
+      "fat": 7,
+      "saturatedFattyAcids": 0.8,
+      "carbohydrates": 25,
+      "sugars": 1,
+      "protein": 3,
+      "salt": 0.9
+    }
+  },
+  {
+    "id": 60,
+    "name": "iglo Gartenerbsen – Frisch vom Feld",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 102,
+      "fat": 1.1,
+      "saturatedFattyAcids": 0.2,
+      "carbohydrates": 11,
+      "sugars": 7.4,
+      "protein": 7.4,
+      "salt": 0.01
+    }
+  },
+  {
+    "id": 61,
+    "name": "iglo Broccoli – Frisch vom Feld",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 45,
+      "fat": 1.2,
+      "saturatedFattyAcids": 0.3,
+      "carbohydrates": 1.7,
+      "sugars": 1.4,
+      "protein": 4.7,
+      "salt": 0.05
+    }
+  },
+  {
+    "id": 62,
+    "name": "iglo Grüne Bohnen – Frisch vom Feld",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 45,
+      "fat": 0.8,
+      "saturatedFattyAcids": 0.2,
+      "carbohydrates": 4.4,
+      "sugars": 3.2,
+      "protein": 2.7,
+      "salt": 0
+    }
+  },
+  {
+    "id": 63,
+    "name": "iglo Rahm-Spinat – der mit dem BLUBB",
+    "allergens": [
+      {
+        "id": 5,
+        "value": "yes"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [ 14 ],
+    "nutrition": {
+      "kcal": 92,
+      "fat": 4.4,
+      "saturatedFattyAcids": 1.2,
+      "carbohydrates": 5.6,
+      "sugars": 3.1,
+      "protein": 6,
+      "salt": 1.4
+    }
+  },
+  {
+    "id": 64,
+    "name": "iglo Fischstäbchen",
+    "allergens": [
+      {
+        "id": 4,
+        "value": "yes"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 298,
+      "fat": 12,
+      "saturatedFattyAcids": 0.9,
+      "carbohydrates": 27,
+      "sugars": 1.3,
+      "protein": 20,
+      "salt": 1.6
+    }
+  },
+  {
+    "id": 65,
+    "name": "ja! Hähnchenbrust-Filetsteaks",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 104,
+      "fat": 1.2,
+      "saturatedFattyAcids": 0.3,
+      "carbohydrates": 2.9,
+      "sugars": 0.3,
+      "protein": 20.3,
+      "salt": 1.3
+    }
+  },
+  {
+    "id": 66,
+    "name": "Vossko Schnitzel vom Schwein nach Wiener Art XXL",
+    "allergens": [
+      {
+        "id": 8,
+        "value": "yes"
+      },
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 272,
+      "fat": 15,
+      "saturatedFattyAcids": 1.8,
+      "carbohydrates": 17,
+      "sugars": 1.6,
+      "protein": 17,
+      "salt": 1.2
+    }
+  },
+  {
+    "id": 67,
+    "name": "Vossko Putenschnitzel",
+    "allergens": [
+      {
+        "id": 13,
+        "value": "yes"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 178,
+      "fat": 6.3,
+      "saturatedFattyAcids": 0.5,
+      "carbohydrates": 12.1,
+      "sugars": 1,
+      "protein": 17.3,
+      "salt": 1.3
+    }
+  },
+  {
+    "id": 68,
+    "name": "Wilhelm Brandenburg Rinderhackfleisch",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 234,
+      "fat": 18,
+      "saturatedFattyAcids": 7.3,
+      "carbohydrates": 0,
+      "sugars": 0,
+      "protein": 18,
+      "salt": 0
+    }
+  },
+  {
+    "id": 69,
+    "name": "Wilhelm Brandenburg Hackfleisch gemischt",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 234,
+      "fat": 18,
+      "saturatedFattyAcids": 7.3,
+      "carbohydrates": 0,
+      "sugars": 0,
+      "protein": 18,
+      "salt": 0
+    }
+  },
+  {
+    "id": 70,
+    "name": "Mutti Passierte Tomaten",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 36,
+      "fat": 0.5,
+      "saturatedFattyAcids": 0.1,
+      "carbohydrates": 5.1,
+      "sugars": 4.5,
+      "protein": 1.6,
+      "salt": 0.5
+    }
+  },
+  {
+    "id": 71,
+    "name": "REWE Bio Hokkaido-Kürbis",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 28,
+      "fat": 0.1,
+      "saturatedFattyAcids": 0,
+      "carbohydrates": 4.6,
+      "sugars": 3.9,
+      "protein": 1.1,
+      "salt": 0.01
+    }
+  },
+  {
+    "id": 72,
+    "name": "REWE Beste Wahl Karotten gewürfelt",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 23,
+      "fat": 0.2,
+      "saturatedFattyAcids": 0.1,
+      "carbohydrates": 3.5,
+      "sugars": 3.3,
+      "protein": 0.6,
+      "salt": 0.6
+    }
+  },
+  {
+    "id": 73,
+    "name": "Feinkost Dittmann Oliven schwarz trocken eingelegt",
+    "allergens": [],
+    "additives": [ 5 ],
+    "nutrition": {
+      "kcal": 174,
+      "fat": 18,
+      "saturatedFattyAcids": 3,
+      "carbohydrates": 0.5,
+      "sugars": 0,
+      "protein": 1.4,
+      "salt": 3
+    }
+  },
+  {
+    "id": 74,
+    "name": "ja! Schweine-Stielkotelett",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 143,
+      "fat": 7,
+      "saturatedFattyAcids": 3,
+      "carbohydrates": 0,
+      "sugars": 0,
+      "protein": 20,
+      "salt": 13
+    }
+  },
+  {
+    "id": 75,
+    "name": "Wiltmann Salamissimo luftgetrocknete Minisalamis pikant",
+    "allergens": [],
+    "additives": [ 2, 3 ],
+    "nutrition": {
+      "kcal": 496,
+      "fat": 39,
+      "saturatedFattyAcids": 15.8,
+      "carbohydrates": 1,
+      "sugars": 1,
+      "protein": 34.8,
+      "salt": 4
+    }
+  },
+  {
+    "id": 76,
+    "name": "Ostmann Curry",
+    "allergens": [],
+    "additives": [
+      {
+        "id": 7,
+        "value": "traces"
+      },
+      {
+        "id": 8,
+        "value": "traces"
+      }
+    ],
+    "nutrition": {
+      "kcal": 377,
+      "fat": 12.7,
+      "saturatedFattyAcids": 1.4,
+      "carbohydrates": 43.9,
+      "sugars": 8.9,
+      "protein": 12.9,
+      "salt": 0.28
+    }
+  },
+  {
+    "id": 77,
+    "name": "Ostmann Paprika edelsüß",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 356,
+      "fat": 13,
+      "saturatedFattyAcids": 2.1,
+      "carbohydrates": 34.9,
+      "sugars": 33.2,
+      "protein": 14.4,
+      "salt": 0.08
+    }
+  },
+  {
+    "id": 78,
+    "name": "Ostmann Oregano gerebelt",
+    "allergens": [
+      {
+        "id": 7,
+        "value": "traces"
+      },
+      {
+        "id": 8,
+        "value": "traces"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 278,
+      "fat": 3,
+      "saturatedFattyAcids": 1,
+      "carbohydrates": 34.1,
+      "sugars": 7.2,
+      "protein": 9.2,
+      "salt": 0.05
+    }
+  },
+  {
+    "id": 79,
+    "name": "Ostmann Thymian gerebelt",
+    "allergens": [
+      {
+        "id": 7,
+        "value": "traces"
+      },
+      {
+        "id": 8,
+        "value": "traces"
+      }
+    ],
+    "additives": [],
+    "nutrition": {
+      "kcal": 285,
+      "fat": 7.4,
+      "saturatedFattyAcids": 2.7,
+      "carbohydrates": 26.9,
+      "sugars": 1.7,
+      "protein": 9.1,
+      "salt": 0.15
+    }
+  },
+  {
+    "id": 80,
+    "name": "Ostmann Zimt gemahlen",
+    "allergens": [],
+    "additives": [],
+    "nutrition": {
+      "kcal": 317,
+      "fat": 3.2,
+      "saturatedFattyAcids": 0.9,
+      "carbohydrates": 56,
+      "sugars": 55.4,
+      "protein": 3.9,
+      "salt": 0.08
+    }
+  }
+]
