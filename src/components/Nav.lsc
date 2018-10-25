@@ -1,0 +1,39 @@
+import React, { Component } from 'react'
+import {
+  Navbar
+  Nav
+  NavItem
+  Dropdown
+  DropdownMenu
+  DropdownItem
+  DropdownToggle
+} from 'reactstrap'
+
+export default class extends Component:
+  state = {}
+  toggle() =>
+    this.setState(state => ({ dropdownOpen: !state.dropdownOpen }))
+  render() ->
+    { dropdownOpen } = this.state
+    <Navbar color="light" light expand="md">
+      <Dropdown isOpen={dropdownOpen} toggle={this.toggle}>
+        <DropdownToggle nav caret>
+          current menu
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem>
+            <i className="feather icon-calendar"> </i>
+            other menu
+          </DropdownItem>
+          <DropdownItem>
+            <i className="feather icon-plus"> </i>
+            create new menu
+          </DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+      <Nav className="ml-auto mr-3" navbar>
+        <NavItem>
+          <i className="feather icon-trash-2 delete"/>
+        </NavItem>
+      </Nav>
+    </Navbar>
