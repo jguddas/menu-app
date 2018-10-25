@@ -19,7 +19,15 @@ emptyMenu = [
 history = createHashHistory()
 
 export default class App extends Component:
-  state = { menus: { default: emptyMenu } }
+  constructor() ->
+    stored = window.localStorage.getItem('menus')
+    if stored:
+      this.state = { menus: JSON.parse(stored) }
+    else:
+      this.state = { menus: { default: emptyMenu~clone() } }
+
+  componentDidUpdate() ->
+    window.localStorage.setItem('menus', JSON.stringify(this.state.menus))
 
   onAdd() => this.setState({ add: true })
 
