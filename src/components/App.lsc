@@ -9,7 +9,7 @@ import Week from './Week'
 import ErrorPage from './ErrorPage'
 
 exampleMenu = [
-  { title: 'Monday', items: [{ name: 'one' }, { name: 'two', id: 5 }], current: 5 }
+  { title: 'Monday', items: [{ name: 'one' }, { name: 'two', id: 5 }], current: true }
   { title: 'Tuesday', items: [] }
   { title: 'Wednesday', items: [] }
   { title: 'Thursday', items: [] }

@@ -29,12 +29,7 @@ export default Day({
     <CardBody>
       <ListGroup>
         {items~map((item, _idx) ->
-          <ListGroupItem
-            key={_idx}
-            className={cx({
-              'text-primary': item.id === current
-            })}
-          >
+          <ListGroupItem key={_idx}>
             {item.name}
           </ListGroupItem>
         )}
