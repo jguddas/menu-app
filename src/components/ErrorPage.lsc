@@ -1,0 +1,11 @@
+import React from 'react'
+
+export default ErrorPage({ msg }) ->
+  <div className="container text-center">
+    <h1 className="h2 m-3 mt-5">
+      Oops.. There has been an Issue..
+    </h1>
+    <p className="h4 text-muted mb-7">
+      {msg}
+    </p>
+  </div>
