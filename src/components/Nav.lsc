@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import {
   Navbar
   Nav
@@ -15,16 +16,21 @@ export default class extends Component:
     this.setState(state => ({ dropdownOpen: !state.dropdownOpen }))
   render() ->
     { dropdownOpen } = this.state
+    { current, menus } = this.props
     <Navbar color="light" light expand="md">
       <Dropdown isOpen={dropdownOpen} toggle={this.toggle}>
         <DropdownToggle nav caret>
-          current menu
+          {current}
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem>
-            <i className="feather icon-calendar"> </i>
-            other menu
-          </DropdownItem>
+          {menus~omit(current)~Object.keys()~map(id ->
+            <Link to={`/${id}`}>
+              <DropdownItem key={id}>
+                <i className="feather icon-calendar"> </i>
+                {id}
+              </DropdownItem>
+            </Link>
+          )}
           <DropdownItem>
             <i className="feather icon-plus"> </i>
             create new menu

@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import {
+  HashRouter as Router
+  Route
+  Redirect
+} from 'react-router-dom'
 import Nav from './Nav'
 import Week from './Week'
+import ErrorPage from './ErrorPage'
 
 exampleMenu = [
   { title: 'Monday', items: [{ name: 'one' }, { name: 'two', id: 5 }], current: 5 }
@@ -9,9 +15,37 @@ exampleMenu = [
   { title: 'Thursday', items: [] }
   { title: 'Friday', items: [] }
 ]
+menus = {
+  'current menu': exampleMenu
+  'other menu': [{ title: '', items: [] }]
+}
 
 export default App() ->
   <div>
-    <Nav/>
-    <Week menu={exampleMenu}/>
+    <Router>
+      <div>
+        <Route
+          path="/:id"
+          render={props ->
+            { id } = props.match.params
+            <Fragment>
+              <Nav menus={menus} current={id} />
+              {
+                if !menus[id]:
+                  <ErrorPage msg="menu could not be found" />
+                else:
+                  <Week menu={menus[id]} />
+              }
+            </Fragment>
+          }
+        />
+        <Route
+          exact
+          path="/"
+          render={->
+            <Redirect to={`/${Object.keys(menus)[0]}`} />
+          }
+        />
+      </div>
+    </Router>
   </div>
