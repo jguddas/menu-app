@@ -1,0 +1,33 @@
+import React from 'react'
+import {
+  Modal
+  ModalHeader
+  ModalBody
+  ModalFooter
+  Button
+  Form
+  FormGroup
+  Input
+  Label
+} from 'reactstrap'
+
+export default AddMenu({ toggle, onConfirm, ...props }) ->
+  <Modal {...props} toggle={toggle}>
+    <ModalHeader toggle={toggle}>Create new Menu</ModalHeader>
+      <Form
+        onSubmit={e ->
+          e.preventDefault()
+          onConfirm(e.target.elements[0].value)
+        }
+      >
+        <ModalBody>
+          <FormGroup className="mb-0">
+            <Label>Menu Name</Label>
+            <Input/>
+          </FormGroup>
+        </ModalBody>
+        <ModalFooter>
+          <Button color="primary">Confirm</Button>
+        </ModalFooter>
+      </Form>
+  </Modal>

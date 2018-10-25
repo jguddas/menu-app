@@ -1,0 +1,21 @@
+import React from 'react'
+import {
+  Modal
+  ModalHeader
+  ModalBody
+  ModalFooter
+  Button
+} from 'reactstrap'
+
+export default AddMenu({ toggle, onConfirm, id, ...props }) ->
+  <Modal {...props} toggle={toggle}>
+    <ModalHeader toggle={toggle}>Delete Menu</ModalHeader>
+    <ModalBody>
+      delete
+      {` ${id} `}
+      menu
+    </ModalBody>
+    <ModalFooter>
+      <Button onClick={onConfirm} color="primary">Confirm</Button>
+    </ModalFooter>
+  </Modal>

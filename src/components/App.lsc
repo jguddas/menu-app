@@ -1,51 +1,96 @@
-import React, { Fragment } from 'react'
-import {
-  HashRouter as Router
-  Route
-  Redirect
-} from 'react-router-dom'
+import React, { Component, Fragment } from 'react'
+import { Router, Route, Redirect } from 'react-router-dom'
+import createHashHistory from 'history/createHashHistory'
 import Nav from './Nav'
 import Week from './Week'
 import ErrorPage from './ErrorPage'
+import AddMenu from './AddMenu'
+import DeleteMenu from './DeleteMenu'
 
-exampleMenu = [
-  { title: 'Monday', items: [{ name: 'one' }, { name: 'two', id: 5 }], current: true }
+emptyMenu = [
+  { title: 'Monday', items: [] }
   { title: 'Tuesday', items: [] }
   { title: 'Wednesday', items: [] }
   { title: 'Thursday', items: [] }
   { title: 'Friday', items: [] }
 ]
-menus = {
-  'current menu': exampleMenu
-  'other menu': [{ title: '', items: [] }]
-}
 
-export default App() ->
-  <div>
-    <Router>
-      <div>
-        <Route
-          path="/:id"
-          render={props ->
-            { id } = props.match.params
-            <Fragment>
-              <Nav menus={menus} current={id} />
-              {
-                if !menus[id]:
-                  <ErrorPage msg="menu could not be found" />
-                else:
-                  <Week menu={menus[id]} />
-              }
-            </Fragment>
-          }
-        />
-        <Route
-          exact
-          path="/"
-          render={->
-            <Redirect to={`/${Object.keys(menus)[0]}`} />
-          }
-        />
-      </div>
-    </Router>
-  </div>
+history = createHashHistory()
+
+export default class App extends Component:
+  state = { menus: { default: emptyMenu } }
+
+  onAdd() => this.setState({ add: true })
+
+  onAddConfirm(id) =>
+    { menus } = this.state
+    if !id || menus[id]: return
+    this.setState(state => ({
+      add: false
+      menus: {
+        ...state.menus
+        [id]: emptyMenu~clone()
+      }
+    }))
+    history.push(`/${id}`)
+
+  onDelete(id) => this.setState({ delete: id })
+
+  onDeleteConfirm(id) =>
+    this.setState(state => ({
+      delete: undefined
+      menus: state.menus~omit(id)
+    }))
+    { menus } = this.state
+    [_id] = Object.keys(menus)
+    if _id: history.push(`/${_id}`)
+
+  toggle() => this.setState({ add: false, delete: undefined })
+
+  render() ->
+    { menus, add, delete: _delete } = this.state
+    <div>
+      <Router history={history}>
+        <div>
+          <AddMenu
+            isOpen={add}
+            toggle={this.toggle}
+            onConfirm={this.onAddConfirm}
+          />
+          <DeleteMenu
+            isOpen={_delete != undefined}
+            id={_delete}
+            toggle={this.toggle}
+            onConfirm={=> this.onDeleteConfirm(_delete)}
+          />
+          <Route
+            path="/:id"
+            render={props =>
+              { id } = props.match.params
+              <Fragment>
+                <Nav
+                  menus={menus}
+                  current={id}
+                  exists={!!menus[id]}
+                  onAdd={this.onAdd}
+                  onDelete={this.onDelete}
+                />
+                {
+                  if !menus[id]:
+                    <ErrorPage msg="menu could not be found" />
+                  else:
+                    <Week menu={menus[id]} />
+                }
+              </Fragment>
+            }
+          />
+          <Route
+            exact
+            path="/"
+            render={->
+              <Redirect to={`/${Object.keys(menus)[0]}`} />
+            }
+          />
+        </div>
+      </Router>
+    </div>

@@ -10,7 +10,7 @@ import {
   DropdownToggle
 } from 'reactstrap'
 
-export default ({ current, menus, onAdd, onDelete }) ->
+export default ({ current, exists, menus, onAdd, onDelete }) ->
     <Navbar color="light" light expand="md">
       <UncontrolledDropdown>
         <DropdownToggle nav caret className="navbar-brand">
@@ -29,9 +29,11 @@ export default ({ current, menus, onAdd, onDelete }) ->
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
-      <Nav className="ml-auto mr-3" navbar>
-        <NavItem onClick={-> onDelete(current)}>
-          <i className="feather icon-trash-2 delete"/>
-        </NavItem>
-      </Nav>
+      {
+        exists && <Nav className="ml-auto mr-3" navbar>
+          <NavItem onClick={-> onDelete(current)}>
+            <i className="feather icon-trash-2 delete"/>
+          </NavItem>
+        </Nav>
+      }
     </Navbar>
