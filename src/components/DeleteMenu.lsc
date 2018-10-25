@@ -16,6 +16,6 @@ export default AddMenu({ toggle, onConfirm, id, ...props }) ->
       menu
     </ModalBody>
     <ModalFooter>
-      <Button onClick={onConfirm} color="primary">Confirm</Button>
+      <Button onClick={onConfirm} color="danger">Confirm</Button>
     </ModalFooter>
   </Modal>
