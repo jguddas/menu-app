@@ -14,13 +14,23 @@ import {
 } from 'reactstrap'
 import articles from '../data/articles.json'
 
-export default AddMenu({ toggle, onConfirm, ...props }) ->
+export default AddMenu({
+  toggle
+  onConfirm
+  item
+  exists
+  onDelete
+  ...props
+}) ->
   <Modal {...props} toggle={toggle}>
-    <ModalHeader toggle={toggle}>Add Menu entry</ModalHeader>
+    <ModalHeader toggle={toggle}>
+      {item ? 'Edit ' : 'Add '}
+      Menu entry
+    </ModalHeader>
       <Form
         onSubmit={e ->
           e.preventDefault()
-          amount = (e.target.elements[1].value || '100').replace(/g$/, '')
+          amount = (e.target.elements[1].value || item?.amount || '100').replace(/g$/, '')
           name = e.target.elements[0].value
           if !(/\D/).test(amount):
             onConfirm({ amount, ...articles.find(val -> val.name == name) })
@@ -32,19 +42,33 @@ export default AddMenu({ toggle, onConfirm, ...props }) ->
               <FormGroup inline className="mb-0">
                 <Label>Article</Label>
                 <select className="form-control">
-                  {articles~map(article -> <option>{article.name}</option>)}
+                  {articles~map(article ->
+                    <option selected={article.name == item?.name && 'selected'}>
+                      {article.name}
+                    </option>
+                  )}
                 </select>
               </FormGroup>
             </Col>
             <Col md={2}>
               <FormGroup inline className="mb-0">
                 <Label>Amount</Label>
-                <Input placeholder="100g" />
+                <Input placeholder={item?.amount ? `${item.amount}g` : '100g'} />
               </FormGroup>
             </Col>
           </Row>
         </ModalBody>
         <ModalFooter>
+          {
+            exists && <Button
+              color="danger"
+              className="mr-auto"
+              type="button"
+              onClick={onDelete}
+            >
+              Delete
+            </Button>
+          }
           <Button color="primary">Confirm</Button>
         </ModalFooter>
       </Form>

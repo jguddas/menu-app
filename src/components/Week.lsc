@@ -1,11 +1,13 @@
 import React from 'react'
-import {
-  Container
-  Row
-} from 'reactstrap'
+import { Container, Row } from 'reactstrap'
 import Day from './Day'
 
-export default Week({ menu, id, onAdd }) ->
+export default Week({
+  menu
+  id
+  onAdd
+  onEdit
+}) ->
   <Container className="mt-4">
     <Row className="row-cards row-deck m-3">
       {menu~map((val, idx) ->
@@ -13,6 +15,7 @@ export default Week({ menu, id, onAdd }) ->
           {...val}
           className="col-12 col-sm-12 col-lg"
           onAdd={-> onAdd(id, idx)}
+          onEdit={item -> onEdit(id, idx, item)}
           key={idx}
         />
       )}

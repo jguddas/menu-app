@@ -5,6 +5,7 @@ import {
   CardBody
   ListGroup
   ListGroupItem
+  Badge
 } from 'reactstrap'
 import cx from 'classnames'
 
@@ -14,6 +15,7 @@ export default Day({
   current
   className = ''
   onAdd
+  onEdit
   ...props
 }) ->
   <Card
@@ -30,11 +32,22 @@ export default Day({
         onClick={onAdd}
       />
     </CardHeader>
-    <CardBody>
+    <CardBody className="cursor-default">
       <ListGroup>
         {items~map((item, _idx) ->
           <ListGroupItem key={_idx}>
+            <span className="float-right" onClick={-> onEdit(_idx)}>
+              <i className="feather icon-edit add" />
+            </span>
             {item.name}
+            <div>
+              <Badge className="font-weight-normal mr-1" pill>
+                {item.amount}g
+              </Badge>
+              <Badge className="font-weight-normal" pill>
+                {item.nutrition.kcal}kcal
+              </Badge>
+            </div>
           </ListGroupItem>
         )}
       </ListGroup>

@@ -55,11 +55,36 @@ export default class App extends Component:
       { menus, addItem: false }
     )
 
+  onEditItem(id, idx, i) =>
+    this.setState(state => ({
+      editItem: {
+        id
+        idx
+        i
+        item: state.menus[id][idx].items[i]
+      }
+    }))
+
+  onEditItemConfirm(id, idx, i, item) =>
+    this.setState(state =>
+      menus = state.menus~cloneDeep()
+      menus[id][idx].items[i] = item
+      { menus, editItem: false }
+    )
+
+  onDeleteItem(id, idx, i) =>
+    this.setState(state =>
+      menus = state.menus~cloneDeep()
+      menus[id][idx].items = menus[id][idx].items~omit(i)
+      { menus, editItem: false }
+    )
+
   toggle() =>
     this.setState({
       add: false
       delete: undefined
       addItem: false
+      editItem: false
     })
 
   render() ->
@@ -68,6 +93,7 @@ export default class App extends Component:
       add
       delete: _delete
       addItem
+      editItem
     } = this.state
     <div>
       <Router history={history}>
@@ -87,8 +113,19 @@ export default class App extends Component:
             isOpen={addItem}
             toggle={this.toggle}
             onConfirm={item =>
-              console.log(item)
               this.onAddItemConfirm(addItem.id, addItem.idx, item)
+            }
+          />
+          <AddItem
+            exists
+            isOpen={editItem}
+            toggle={this.toggle}
+            item={editItem?.item}
+            onDelete={=>
+              this.onDeleteItem(editItem?.id, editItem?.idx, editItem?.i)
+            }
+            onConfirm={item =>
+              this.onEditItemConfirm(editItem?.id, editItem?.idx, editItem?.i, item)
             }
           />
           <Route
@@ -107,7 +144,12 @@ export default class App extends Component:
                   if !menus[id]:
                     <ErrorPage msg="menu could not be found" />
                   else:
-                    <Week menu={menus[id]} id={id} onAdd={this.onAddItem}/>
+                    <Week
+                      menu={menus[id]}
+                      id={id}
+                      onAdd={this.onAddItem}
+                      onEdit={this.onEditItem}
+                    />
                 }
               </Fragment>
             }
