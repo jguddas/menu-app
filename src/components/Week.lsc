@@ -1,0 +1,19 @@
+import React from 'react'
+import {
+  Container
+  Row
+} from 'reactstrap'
+import Day from './Day'
+
+export default Week({ menu }) ->
+  <Container className="mt-4">
+    <Row className="row-cards row-deck m-3">
+      {menu~map((val, idx) ->
+        <Day
+          {...val}
+          className="col-12 col-sm-12 col-lg"
+          key={idx}
+        />
+      )}
+    </Row>
+  </Container>

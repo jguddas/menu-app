@@ -1,0 +1,43 @@
+import React from 'react'
+import {
+  Card
+  CardHeader
+  CardBody
+  ListGroup
+  ListGroupItem
+} from 'reactstrap'
+import cx from 'classnames'
+
+export default Day({
+  title
+  items
+  current
+  className = ''
+  ...props
+}) ->
+  <Card
+    {...props}
+    className={cx('col p-0 mb-3 mr-3', {
+      border: current
+      'border-primary': current
+    }, className)}
+  >
+    <CardHeader>
+      {title}
+      <i className="feather icon-plus float-right mt-1 add" />
+    </CardHeader>
+    <CardBody>
+      <ListGroup>
+        {items~map((item, _idx) ->
+          <ListGroupItem
+            key={_idx}
+            className={cx({
+              'text-primary': item.id === current
+            })}
+          >
+            {item.name}
+          </ListGroupItem>
+        )}
+      </ListGroup>
+    </CardBody>
+  </Card>

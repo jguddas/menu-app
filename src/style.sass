@@ -1,8 +1,24 @@
 @import '~bootstrap/scss/bootstrap'
 @import '~feather-font/src/css/iconfont.css'
 
+.row-cards > .col, .row-deck > [class*='col-']
+  display: flex
+  flex-direction: column
+
+.row-deck > .col, .row-deck > [class*='col-']
+  display: flex
+  align-items: stretch
+  > .card
+    flex: 1 1 auto
+
 .delete
   color: $secondary
   cursor: pointer
   &:hover
     color: $danger
+
+.add
+  color: $secondary
+  cursor: pointer
+  &:hover
+    color: $primary

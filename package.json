@@ -8,8 +8,10 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "classnames": "^2.2.6",
     "feather-font": "AT-UI/feather-font",
     "jumpstart-cli": "^3.1.5",
+    "lodash": "^4.17.11",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "reactstrap": "^6.5.0"
